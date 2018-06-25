@@ -1,0 +1,35 @@
+{
+  "name": "first_full_plate",
+  "version": "0.1.0",
+  "description": "Sam's first full plate",
+  "main": "index.js",
+  "repository": "https://github.com/sam-by-name/fullstack-boilerPlate.git",
+  "author": "Sam.L.Sanders",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack && node server",
+    "dev": "nodemon server & webpack --watch",
+    "test": "jest -watchall",
+    "build": "webpack --config client/webpack.config.js",
+    "knex": "knex"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "bable-loader": "^0.0.1-security",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.2.0",
+    "jsdom": "^11.11.0",
+    "knex": "^0.14.6",
+    "nodemon": "^1.17.5",
+    "react": "^16.4.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "sqlite3": "^4.0.1",
+    "superagent": "^3.8.3",
+    "webpack": "^4.12.1"
+  }
+}
