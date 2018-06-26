@@ -1,5 +1,5 @@
 const knex = require('knex')
-const config = require('../knexfile').development
+const config = require('../../knexfile').development
 const dbTest = knex(config)
 
 module.exports = {
@@ -17,3 +17,5 @@ function getPoem (id, db = dbTest) {
     .where('id', id)
     .select()
 }
+// function getAuthor (id, db = dbTest) {
+// }
