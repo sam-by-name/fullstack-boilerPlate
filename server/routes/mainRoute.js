@@ -17,4 +17,14 @@ router.get('/', (req, res) => {
     })
 })
 
+router.get('/:id', (req, res) => {
+  db.getPoems()
+    .then(poem => {
+      res.json(poem)
+    })
+    .catch(err => {
+      res.status(500).send('Database error: ' + err.message)
+    })
+})
+
 module.exports = router
